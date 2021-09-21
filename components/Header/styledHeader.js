@@ -1,18 +1,42 @@
 import styled from 'styled-components';
+import { lgScreen, mdScreen } from '../../global';
 
 export const HeaderTag = styled.header`
-  background-color: #111;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #111;
+  color: #eee;
+
+  @media screen and (max-width: ${mdScreen}) {
+    flex-direction: column;
+  }
 `;
 
 export const LinksList = styled.ul`
   display: flex;
+  width: 25%;
+  gap: 2rem;
+
+  @media screen and (max-width: ${lgScreen}) {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  @media screen and (max-width: ${mdScreen}) {
+    gap: 0.5rem;
+    justify-content: center;
+  }
 `;
 
-export const Link = styled.a``;
+export const Link = styled.a`
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  transition: 0.2s;
+
+  :hover {
+    border-bottom: 4px solid #ef9fa7;
+  }
+`;
 
 export const Lashes = styled.div`
   justify-content: center;
@@ -43,12 +67,13 @@ export const Lash = styled.div`
   background-color: #fff;
   border-radius: 25%;
   transition: all 0.4s cubic-bezier(.175,.885,.32,1.275);
+  background: #eee;
 `;
 
 export const Eye = styled.div`
   width: 28px;
   height: 20px;
-  background: #fff;
+  background: #eee;
   display: inline-block;
   border-radius: 50%;
   position: relative;
@@ -69,9 +94,11 @@ export const Ball = styled.div`
 
 export const EyeContainer = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column;
   position: relative;
   cursor: pointer;
+  width: 25%;
 
   :hover ${Lashes} {
     display: flex;
@@ -82,8 +109,21 @@ export const EyeContainer = styled.div`
     height: 15px;
     transition: all 0.4s cubic-bezier(.175,.885,.32,1.275);
   }
+
+  @media screen and (max-width: ${lgScreen}) {
+    display: none;
+  }
 `;
 
-export const SocialBox = styled.div``;
+export const SocialBox = styled.div`
+  display: flex;
+  width: 25%;
+  gap: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  transition: all 0.4s cubic-bezier(.175,.885,.32,1.275);
 
-export const SocialLink = styled.div``;
+  @media screen and (max-width: ${lgScreen}) {
+    gap: 1rem;
+    justify-content: center;
+  }
+`;

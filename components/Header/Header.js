@@ -1,3 +1,10 @@
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { BsMoon } from "react-icons/bs";
+import { BiSun } from "react-icons/bi";
+import portfolioData from "../../data/portfolioData.json";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { darkValue, setDarkMode } from "../../redux/slices/darkSlice";
 import {
     HeaderTag,
     LinksList,
@@ -8,20 +15,21 @@ import {
     Lashes,
     Lash,
     SocialBox,
-    SocialLink,
 } from "./styledHeader";
 
 export const Header = () => {
-    const array = ['Work', 'About', 'Education', 'Contact'];
-    const links = array.map((link, i) => (
-        <li key={i}>
-            <Link>{link}</Link>
+    const dispatch = useDispatch();
+    const darkConst = useSelector(darkValue);
+
+    const links = portfolioData.header.links.map(link => (
+        <li key={link.id}>
+            <Link>{link.title}</Link>
         </li>
     ));
 
     let ball = document.getElementsByClassName("ball");
 
-    document.onmousemove = function () {
+    document.onmousemove = () => {
         let x = event.clientX * 100 / window.innerWidth + "%";
         let y = event.clientY * 100 / window.innerHeight + "%";
 
@@ -32,6 +40,9 @@ export const Header = () => {
         };
     };
 
+    const handleLight = () => dispatch(setDarkMode("light"));
+    const handleDark = () => dispatch(setDarkMode("dark"));
+
     return (
         <HeaderTag>
             <LinksList>
@@ -39,17 +50,24 @@ export const Header = () => {
             </LinksList>
             <EyeContainer>
                 <Lashes>
-                    <Lash className="lash__1"></Lash>
-                    <Lash className="lash__2"></Lash>
-                    <Lash className="lash__3"></Lash>
+                    <Lash darkConst={darkConst} className="lash__1"></Lash>
+                    <Lash darkConst={darkConst} className="lash__2"></Lash>
+                    <Lash darkConst={darkConst} className="lash__3"></Lash>
                 </Lashes>
-                <Eye>
+                <Eye darkConst={darkConst}>
                     <Ball className="ball"></Ball>
                 </Eye>
             </EyeContainer>
             <SocialBox>
-                <SocialLink>Github</SocialLink>
-                <SocialLink>Whatsapp</SocialLink>
+                <a>
+                    <FaGithub />
+                </a>
+                <a>
+                    <FaWhatsapp />
+                </a>
+                <a>
+                    {darkConst === "light" ? <BsMoon onClick={() => handleDark()} /> : <BiSun onClick={() => handleLight()} />}
+                </a>
             </SocialBox>
 
         </HeaderTag>

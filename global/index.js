@@ -8,4 +8,5 @@ export {
     lightTheme,
     darkTheme,
     GlobalStyle,
+    Main,
 } from "./styles/GlobalStyle";

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
 // Favorite Color
 const hueColor = '240';
@@ -10,54 +11,56 @@ export const lgScreen = '768px';
 export const xlScreen = '1024px';
 
 export const theme = {
-    fontSize: {
-        bigFontSize: '2rem',
-        h1FontSize: '1.5rem',
-        h2FontSize: '1.25rem',
-        h3FontSize: '1.12rem',
-        normalFontSize: '0.938rem',
-        smallFontSize: '0.813rem',
-        smallerFontSize: '0.75rem',
-        fontWeight: {
-            fontLight: 300,
-            fontSemiBold: 400,
-            fontBold: 600
-        }
+  fontSize: {
+    bigFontSize: '2rem',
+    h1FontSize: '1.5rem',
+    h2FontSize: '1.25rem',
+    h3FontSize: '1.12rem',
+    normalFontSize: '0.938rem',
+    smallFontSize: '0.813rem',
+    smallerFontSize: '0.75rem',
+    fontWeight: {
+      fontLight: 300,
+      fontSemiBold: 400,
+      fontBold: 600
     }
+  }
 };
 
 export const lightTheme = {
-    colors: {
-        firstColor: `hsl(${hueColor}, 69%, 61%)`,
-        firstColorSecond: `hsl(${hueColor}, 69%, 61%)`,
-        firstColorAlt: `hsl(${hueColor}, 57%, 53%)`,
-        firstColorLighter: `hsl(${hueColor}, 92%, 85%)`,
-        titleColor: `hsl(${hueColor}, 8%, 15%)`,
-        textColor: `hsl(${hueColor}, 8%, 45%)`,
-        textColorLight: `hsl(${hueColor}, 8%, 65%)`,
-        inputColor: `hsl(${hueColor}, 70%, 96%)`,
-        bodyColor: `hsl(${hueColor}, 60%, 99%)`,
-        containerColor: '#eee',
-        scrollBarColor: `hsl(${hueColor}, 12%, 90%)`,
-        scrollThumbColor: `hsl(${hueColor}, 12%, 80%)`,
-    },
+  colors: {
+    firstColor: `hsl(${hueColor}, 69%, 61%)`,
+    firstColorSecond: `hsl(${hueColor}, 69%, 61%)`,
+    firstColorAlt: `hsl(${hueColor}, 57%, 53%)`,
+    firstColorLighter: `hsl(${hueColor}, 92%, 85%)`,
+    titleColor: `hsl(${hueColor}, 8%, 15%)`,
+    textColor: `hsl(${hueColor}, 8%, 45%)`,
+    textColorLight: `hsl(${hueColor}, 8%, 65%)`,
+    inputColor: `hsl(${hueColor}, 70%, 96%)`,
+    bodyColor: `#eee`,
+    containerColor: '#111',
+    scrollBarColor: `hsl(${hueColor}, 12%, 90%)`,
+    scrollThumbColor: `hsl(${hueColor}, 12%, 80%)`,
+    textGradient: `linear-gradient(hsl(${hueColor}, 4%, 24%), hsl(${hueColor}, 4%, 8%))`,
+  },
 };
 
 export const darkTheme = {
-    colors: {
-        firstColor: `hsl(${hueColor}, 69%, 61%)`,
-        firstColorSecond: `hsl(${hueColor}, 30%, 8%)`,
-        firstColorAlt: `hsl(${hueColor}, 57%, 53%)`,
-        firstColorLighter: `hsl(${hueColor}, 92%, 85%)`,
-        titleColor: `hsl(${hueColor}, 8%, 95%)`,
-        textColor: `hsl(${hueColor}, 8%, 75%)`,
-        textColorLight: `hsl(${hueColor}, 8%, 65%)`,
-        inputColor: `hsl(${hueColor}, 29%, 16%)`,
-        bodyColor: `hsl(${hueColor}, 28%, 13%)`,
-        containerColor: `hsl(${hueColor}, 29%, 16%)`,
-        scrollBarColor: `hsl(${hueColor}, 12%, 48%)`,
-        scrollThumbColor: `hsl(${hueColor}, 12%, 36%)`,
-    },
+  colors: {
+    firstColor: `hsl(${hueColor}, 69%, 61%)`,
+    firstColorSecond: `hsl(${hueColor}, 30%, 8%)`,
+    firstColorAlt: `hsl(${hueColor}, 57%, 53%)`,
+    firstColorLighter: `hsl(${hueColor}, 92%, 85%)`,
+    titleColor: `hsl(${hueColor}, 8%, 95%)`,
+    textColor: `hsl(${hueColor}, 8%, 75%)`,
+    textColorLight: `hsl(${hueColor}, 8%, 65%)`,
+    inputColor: `hsl(${hueColor}, 29%, 16%)`,
+    bodyColor: `#111`,
+    containerColor: `#eee`,
+    scrollBarColor: `hsl(${hueColor}, 12%, 48%)`,
+    scrollThumbColor: `hsl(${hueColor}, 12%, 36%)`,
+    textGradient: `linear-gradient(hsl(${hueColor}, 4%, 24%), hsl(${hueColor}, 4%, 8%))`,
+  },
 };
 
 export const GlobalStyle = createGlobalStyle`
@@ -76,7 +79,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: ${({ theme }) => theme.colors.bodyColor};
-
+    color: ${({ theme }) => theme.colors.textColor};
   }
 
   a {
@@ -95,4 +98,11 @@ export const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
   }
+`;
+
+// Layout
+export const Main = styled.main`
+  max-width: 1700px;
+  margin: 2rem auto;
+  padding: 1rem;
 `;

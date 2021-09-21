@@ -1,3 +1,4 @@
+import { Hero } from "../components";
 import { Headtag } from "../global";
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <div>
       <Headtag title="Omar's Portfolio | Resume" />
 
-      <h1>Build something crazy</h1>
+      <Hero />
     </div>
   )
 };

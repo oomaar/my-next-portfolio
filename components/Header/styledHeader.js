@@ -7,6 +7,11 @@ export const HeaderTag = styled.header`
   justify-content: space-between;
   background-color: #111;
   color: #eee;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
 
   @media screen and (max-width: ${mdScreen}) {
     flex-direction: column;

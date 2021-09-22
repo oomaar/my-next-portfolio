@@ -119,7 +119,7 @@ export const SocialBox = styled.div`
   display: flex;
   width: 25%;
   gap: 2rem;
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
   transition: all 0.4s cubic-bezier(.175,.885,.32,1.275);
 
   @media screen and (max-width: ${lgScreen}) {

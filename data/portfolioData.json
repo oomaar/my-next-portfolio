@@ -18,5 +18,45 @@
         "title": "Contact"
       }
     ]
+  },
+  "portfolio": {
+    "clones": [
+      {
+        "title": "hulu Clone",
+        "image": "/portfolio/hulu.png",
+        "url": "https://hulu-clone-xi-wheat.vercel.app/",
+        "description": "This Project was built using NextJS and Styled-components"
+      },
+      {
+        "title": "Netflix App",
+        "image": "/portfolio/netflix.jpg",
+        "url": "https://dreamy-meninsky-4d3cd3.netlify.app/",
+        "description": "This Project was built using NextJS and Styled-components"
+      },
+      {
+        "title": "Twitter Clone",
+        "image": "/portfolio/twitter.jpg",
+        "url": "https://twitter-4e819.web.app/",
+        "description": "Fully Responsive Twitter Clone developed with ReactJS, Styled-components and Firebase."
+      },
+      {
+        "title": "Google Clone",
+        "image": "/portfolio/google.jpg",
+        "url": "https://google-clone-tailwind-delta.vercel.app/",
+        "description": "Devloped my own search engine (The Google Clone) with NextJS and Tailwind-CSS."
+      },
+      {
+        "title": "Whatsapp Clone",
+        "image": "/portfolio/whatsapp.jpg",
+        "url": "https://whatsapp-clone-oomaar.vercel.app/",
+        "description": "Developed using NextJS, Tailwind-CSS and Firebase."
+      },
+      {
+        "title": "Geforce Clone",
+        "image": "/portfolio/geforce.jpg",
+        "url": "https://geforce-clone-oomaar.vercel.app/",
+        "description": "Developed using NextJS and styled-components."
+      }
+    ]
   }
 }

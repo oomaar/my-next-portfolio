@@ -12,7 +12,9 @@ export const xlScreen = '1024px';
 
 export const theme = {
   fontSize: {
-    bigFontSize: '2rem',
+    biggestFontSize: '6rem',
+    biggerFontSize: '4rem',
+    bigFontSize: '3rem',
     h1FontSize: '1.5rem',
     h2FontSize: '1.25rem',
     h3FontSize: '1.12rem',
@@ -41,7 +43,7 @@ export const lightTheme = {
     containerColor: '#111',
     scrollBarColor: `hsl(${hueColor}, 12%, 90%)`,
     scrollThumbColor: `hsl(${hueColor}, 12%, 80%)`,
-    textGradient: `linear-gradient(hsl(${hueColor}, 4%, 24%), hsl(${hueColor}, 4%, 8%))`,
+    textGradient: `linear-gradient(to right, #edca85, #e58cb7, #a166e9, #a0e9ff)`,
   },
 };
 
@@ -59,7 +61,7 @@ export const darkTheme = {
     containerColor: `#eee`,
     scrollBarColor: `hsl(${hueColor}, 12%, 48%)`,
     scrollThumbColor: `hsl(${hueColor}, 12%, 36%)`,
-    textGradient: `linear-gradient(hsl(${hueColor}, 4%, 24%), hsl(${hueColor}, 4%, 8%))`,
+    textGradient: `linear-gradient(to right, #edca85, #e58cb7, #a166e9, #a0e9ff)`,
   },
 };
 
@@ -97,6 +99,22 @@ export const GlobalStyle = createGlobalStyle`
 
   img {
     max-width: 100%;
+  }
+
+  /* Scroll Bar */
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: ${({ theme }) => theme.colors.scrollBarColor};
+    border-radius: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.colors.scrollThumbColor};
+    border-radius: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: ${({ theme }) => theme.colors.textColorLight};
   }
 `;
 

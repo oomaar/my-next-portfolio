@@ -1,4 +1,4 @@
-import { Hero } from "../components";
+import { Hero, Portfolio } from "../components";
 import { Headtag, Main } from "../global";
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
 
       <Main>
         <Hero />
+        <Portfolio />
       </Main>
     </div>
   )

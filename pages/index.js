@@ -1,5 +1,6 @@
 import { Hero, Portfolio } from "../components";
 import { Headtag, Main } from "../global";
+import portfolioData from "../data/portfolioData.json";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
 
       <Main>
         <Hero />
-        <Portfolio />
+        <Portfolio data={portfolioData.portfolio} />
       </Main>
     </div>
   )

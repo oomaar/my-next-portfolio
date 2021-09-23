@@ -63,6 +63,22 @@
         "url": "https://geforce-clone-oomaar.vercel.app/",
         "description": "Developed using NextJS and styled-components."
       }
+    ],
+    "school": [
+      {
+        "id": 6,
+        "title": "Makeup Store Demo",
+        "image": "/portfolio/makeup.jpg",
+        "url": "https://serene-spence-a7962f.netlify.app/",
+        "description": "Developed Fully Responsive with ReactJS and Styled-components."
+      },
+      {
+        "id": 7,
+        "title": "Covid-19 Tracker",
+        "image": "/portfolio/covid-tracker.jpg",
+        "url": "https://covid-19-tracker-16970.web.app/",
+        "description": "Fully Responsive covid-19 Tracker using ReactJS and Styled Components."
+      }
     ]
   }
 }

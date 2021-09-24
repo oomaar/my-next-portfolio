@@ -81,6 +81,13 @@ export const TextContainer = styled.div`
   @media screen and (max-width: ${xlScreen}) {
     width: 100%;
     margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: ${lgScreen}) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -106,6 +113,9 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.h3`
+  width: 80%;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+
   @media screen and (max-width: ${xlScreen}) {
     width: 50%;
   }
@@ -208,10 +218,11 @@ export const BoxCenter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   @media screen and (max-width: 1300px) {
     width: 75%;
-    height: 75%;
+    height: 65%;
   }
 
   @media screen and (max-width: ${xlScreen}) {

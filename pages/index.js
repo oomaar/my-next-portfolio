@@ -8,7 +8,7 @@ export default function Home() {
       <Headtag title="Omar's Portfolio | Resume" />
 
       <Main>
-        <Hero />
+        <Hero data={portfolioData.hero} />
         <Portfolio data={portfolioData.portfolio} />
       </Main>
     </div>

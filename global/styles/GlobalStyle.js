@@ -19,9 +19,9 @@ export const tansition_04 = "all 0.4s cubic-bezier(.175,.885,.32,1.275)";
 
 export const theme = {
   fontSize: {
-    biggestFontSize: '6rem',
-    biggerFontSize: '4rem',
-    bigFontSize: '3rem',
+    biggestFontSize: '5.8rem',
+    biggerFontSize: '3.9rem',
+    bigFontSize: '2.4rem',
     h1FontSize: '1.5rem',
     h2FontSize: '1.25rem',
     h3FontSize: '1.12rem',
@@ -130,4 +130,8 @@ export const Main = styled.main`
   max-width: 1700px;
   margin: calc(${headerHeight} + 1rem) auto 2rem;
   padding: 1rem;
+
+  @media screen and (max-width: ${smScreen}) {
+    padding: 0.5rem;
+  }
 `;

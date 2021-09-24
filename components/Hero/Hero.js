@@ -18,15 +18,12 @@ import {
     Box5,
 } from "./styledHero";
 
-export const Hero = () => {
+export const Hero = ({ data }) => {
     return (
         <HeroContainer>
             <TextContainer>
-                <Title>Hi. I'm Omar <br /> A Programmer.</Title>
-                <Subtitle>
-                    I’m also a front-end developer with a keen eye for creating beautiful UIs,
-                    producing quality work.
-                </Subtitle>
+                <Title>Hi. I'm {data.firstName} <br /> A Programmer.</Title>
+                <Subtitle>{data.subTitle}</Subtitle>
             </TextContainer>
             <BigEyeContainer>
                 <Box1></Box1>

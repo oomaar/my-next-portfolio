@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { lgScreen, mdScreen } from '../../global';
+import { headerHeight } from '../../global/styles/GlobalStyle';
 
 export const HeaderTag = styled.header`
   display: flex;
@@ -12,6 +13,7 @@ export const HeaderTag = styled.header`
   right: 0;
   top: 0;
   z-index: 100;
+  height: ${headerHeight};
 
   @media screen and (max-width: ${mdScreen}) {
     flex-direction: column;

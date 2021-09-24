@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 
+// Header Height
+export const headerHeight = '6rem';
+
 // Favorite Color
 const hueColor = '240';
 
@@ -121,6 +124,6 @@ export const GlobalStyle = createGlobalStyle`
 // Layout
 export const Main = styled.main`
   max-width: 1700px;
-  margin: 2rem auto;
+  margin: calc(${headerHeight} + 1rem) auto 2rem;
   padding: 1rem;
 `;

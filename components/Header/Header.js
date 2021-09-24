@@ -9,6 +9,7 @@ import {
     HeaderTag,
     LinksList,
     Link,
+    TheEye,
     EyeContainer,
     Eye,
     Ball,
@@ -48,16 +49,18 @@ export const Header = () => {
             <LinksList>
                 {links}
             </LinksList>
-            <EyeContainer>
-                <Lashes>
-                    <Lash darkConst={darkConst} className="lash__1"></Lash>
-                    <Lash darkConst={darkConst} className="lash__2"></Lash>
-                    <Lash darkConst={darkConst} className="lash__3"></Lash>
-                </Lashes>
-                <Eye darkConst={darkConst}>
-                    <Ball className="ball"></Ball>
-                </Eye>
-            </EyeContainer>
+            <TheEye>
+                <EyeContainer>
+                    <Lashes>
+                        <Lash darkConst={darkConst} className="lash__1"></Lash>
+                        <Lash darkConst={darkConst} className="lash__2"></Lash>
+                        <Lash darkConst={darkConst} className="lash__3"></Lash>
+                    </Lashes>
+                    <Eye darkConst={darkConst}>
+                        <Ball className="ball"></Ball>
+                    </Eye>
+                </EyeContainer>
+            </TheEye>
             <SocialBox>
                 <a>
                     <FaGithub />

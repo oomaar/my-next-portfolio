@@ -13,6 +13,10 @@ export const mdScreen = '568px';
 export const lgScreen = '768px';
 export const xlScreen = '1024px';
 
+// Transitions
+export const transition_02 = "all 0.2s cubic-bezier(.175,.885,.32,1.275)";
+export const tansition_04 = "all 0.4s cubic-bezier(.175,.885,.32,1.275)";
+
 export const theme = {
   fontSize: {
     biggestFontSize: '6rem',

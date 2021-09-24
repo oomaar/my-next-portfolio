@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { lgScreen, mdScreen } from '../../global';
-import { headerHeight } from '../../global/styles/GlobalStyle';
+import { headerHeight, tansition_04, transition_02 } from '../../global/styles/GlobalStyle';
 
 export const HeaderTag = styled.header`
   display: flex;
@@ -14,6 +14,11 @@ export const HeaderTag = styled.header`
   top: 0;
   z-index: 100;
   height: ${headerHeight};
+  padding: 0 6rem;
+
+  @media screen and (max-width: 1150px) {
+    padding: 0;
+  }
 
   @media screen and (max-width: ${mdScreen}) {
     flex-direction: column;
@@ -37,8 +42,8 @@ export const LinksList = styled.ul`
 `;
 
 export const Link = styled.a`
-  font-size: clamp(1.1rem, 2vw, 1.3rem);
-  transition: 0.2s;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  transition: ${transition_02};
 
   :hover {
     border-bottom: 4px solid #ef9fa7;
@@ -53,7 +58,7 @@ export const Lashes = styled.div`
   position: absolute;
   top: -0.8rem;
   display: none;
-  transition: all 0.4s cubic-bezier(.175,.885,.32,1.275);
+  transition: ${tansition_04};
   
   .lash__1 {
     transform: rotate(-35deg);
@@ -73,7 +78,7 @@ export const Lash = styled.div`
   height: 9px;
   background-color: #fff;
   border-radius: 25%;
-  transition: all 0.4s cubic-bezier(.175,.885,.32,1.275);
+  transition: ${tansition_04};
   background: #eee;
 `;
 
@@ -106,6 +111,7 @@ export const EyeContainer = styled.div`
   position: relative;
   cursor: pointer;
   width: 25%;
+  pointer-events: fill;
 
   :hover ${Lashes} {
     display: flex;
@@ -114,7 +120,7 @@ export const EyeContainer = styled.div`
   :hover ${Ball} {
     width: 15px;
     height: 15px;
-    transition: all 0.4s cubic-bezier(.175,.885,.32,1.275);
+    transition: ${tansition_04};
   }
 
   @media screen and (max-width: ${lgScreen}) {
@@ -122,12 +128,21 @@ export const EyeContainer = styled.div`
   }
 `;
 
+export const TheEye = styled.div`
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+`;
+
 export const SocialBox = styled.div`
   display: flex;
   width: 25%;
   gap: 2rem;
   font-size: clamp(1.3rem, 2vw, 1.5rem);
-  transition: all 0.4s cubic-bezier(.175,.885,.32,1.275);
+  transition: ${tansition_04};
 
   @media screen and (max-width: ${lgScreen}) {
     gap: 1rem;

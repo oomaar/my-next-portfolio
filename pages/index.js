@@ -1,4 +1,4 @@
-import { Hero, Portfolio } from "../components";
+import { Hero } from "../components";
 import { Headtag, Main } from "../global";
 import portfolioData from "../data/portfolioData.json";
 
@@ -9,7 +9,6 @@ export default function Home() {
 
       <Main>
         <Hero data={portfolioData.hero} />
-        <Portfolio data={portfolioData.portfolio} />
       </Main>
     </div>
   )

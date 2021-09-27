@@ -52,11 +52,11 @@ export const Header = () => {
             <TheEye>
                 <EyeContainer>
                     <Lashes>
-                        <Lash darkConst={darkConst} className="lash__1"></Lash>
-                        <Lash darkConst={darkConst} className="lash__2"></Lash>
-                        <Lash darkConst={darkConst} className="lash__3"></Lash>
+                        <Lash className="lash__1"></Lash>
+                        <Lash className="lash__2"></Lash>
+                        <Lash className="lash__3"></Lash>
                     </Lashes>
-                    <Eye darkConst={darkConst}>
+                    <Eye>
                         <Ball className="ball"></Ball>
                     </Eye>
                 </EyeContainer>

@@ -9,7 +9,7 @@ export default function Home() {
 
       <Main>
         <Hero data={portfolioData.hero} />
-        <Work />
+        <Work data={portfolioData.portfolio} />
       </Main>
     </div>
   )

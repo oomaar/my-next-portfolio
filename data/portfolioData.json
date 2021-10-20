@@ -66,21 +66,37 @@
         "image": "/portfolio/geforce.jpg",
         "url": "https://geforce-clone-oomaar.vercel.app/",
         "description": "Developed using NextJS and styled-components."
+      },
+      {
+        "id": 7,
+        "title": "Amazon Re-Design",
+        "image": "/portfolio/amazon-redesign.jpg",
+        "url": "https://amazon-clone-redesign-nnetig0ha-oomaar.vercel.app/",
+        "description": "Developed using NextJS, Redux and styled-components."
       }
     ],
     "school": [
       {
-        "id": 6,
+        "id": 1,
         "title": "Makeup Store Demo",
         "image": "/portfolio/makeup.jpg",
         "url": "https://serene-spence-a7962f.netlify.app/",
         "description": "Developed Fully Responsive with ReactJS and Styled-components."
       },
       {
-        "id": 7,
+        "id": 2,
         "title": "Covid-19 Tracker",
         "image": "/portfolio/covid-tracker.jpg",
         "url": "https://covid-19-tracker-16970.web.app/",
+        "description": "Fully Responsive covid-19 Tracker using ReactJS and Styled Components."
+      }
+    ],
+    "freeLance": [
+      {
+        "id": 1,
+        "title": "Animation Portfolio",
+        "image": "/portfolio/my-animation-portfolio.jpg",
+        "url": "https://omars-portfolio.vercel.app/",
         "description": "Fully Responsive covid-19 Tracker using ReactJS and Styled Components."
       }
     ]

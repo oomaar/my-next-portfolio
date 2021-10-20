@@ -21,6 +21,10 @@ export const tansition_04 = "all 0.4s cubic-bezier(.175,.885,.32,1.275)";
 const borderColorLight = `4px solid #ff8243`;
 const borderColorDark = `4px solid #ef9fa7`;
 
+// Shadows
+const shadowLight = '0px 10px 15px -3px hsla(0, 0%, 0%, 0.06), 0px 4px 6px -2px hsla(0, 0%, 0%, 0.05)';
+const shadowDark = '0px 10px 15px -3px hsla(220, 13%, 91%, 0.06), 0px 4px 6px -2px hsla(220, 13%, 91%, 0.05)';
+
 export const theme = {
   fontSize: {
     biggestFontSize: '5.8rem',
@@ -42,14 +46,13 @@ export const theme = {
 
 export const lightTheme = {
   colors: {
-    linkColor: `#BD1616`,
-    firstColorSecond: `hsl(${hueColor}, 69%, 61%)`,
-    firstColorAlt: `hsl(${hueColor}, 57%, 53%)`,
-    firstColorLighter: `hsl(${hueColor}, 92%, 85%)`,
+    linkColor: `#bd1616`,
+    buttonText: `#fff`,
+    buttonColor: `hsl(240, 42%, 65%)`,
+    shadowColor: `${shadowLight}`,
     titleColor: `hsl(${hueColor}, 8%, 15%)`,
     textColor: `hsl(${hueColor}, 8%, 45%)`,
     textColorLight: `hsl(${hueColor}, 8%, 65%)`,
-    inputColor: `hsl(${hueColor}, 70%, 96%)`,
     bodyColor: `#eee`,
     borderColor: `${borderColorLight}`,
     containerColor: 'rgba(210, 210, 210)',
@@ -63,13 +66,12 @@ export const lightTheme = {
 export const darkTheme = {
   colors: {
     linkColor: `#edca85`,
-    firstColorSecond: `hsl(${hueColor}, 30%, 8%)`,
-    firstColorAlt: `hsl(${hueColor}, 57%, 53%)`,
-    firstColorLighter: `hsl(${hueColor}, 92%, 85%)`,
+    buttonText: `#333`,
+    buttonColor: `#82b42f`,
+    shadowColor: `${shadowDark}`,
     titleColor: `hsl(${hueColor}, 8%, 95%)`,
     textColor: `hsl(${hueColor}, 8%, 75%)`,
     textColorLight: `hsl(${hueColor}, 8%, 65%)`,
-    inputColor: `hsl(${hueColor}, 29%, 16%)`,
     bodyColor: `#111`,
     borderColor: `${borderColorDark}`,
     containerColor: `#222`,
@@ -151,7 +153,7 @@ export const Section = styled.section`
   justify-content: center;
 
   @media screen and (max-width: ${xlScreen}) {
-    margin-top: 0;
+    margin: 3rem 0;
   }
 `;
 
@@ -176,4 +178,5 @@ export const Title = styled.h2`
   -webkit-background-clip: text;
   background-clip: text;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-family: 'Grechen Fuemen', cursive;
 `;

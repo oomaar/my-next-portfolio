@@ -67,7 +67,7 @@ export const Work = ({ data }) => {
     ));
 
     return (
-        <Section id="work">
+        <Section work id="work">
             <Container>
                 <Title>Works</Title>
 

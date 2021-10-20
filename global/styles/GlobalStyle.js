@@ -146,7 +146,7 @@ export const Main = styled.main`
 
 export const Section = styled.section`
   margin-top: 10rem;
-  height: 100vh;
+  height: ${({ work }) => work ? "100vh" : "auto"};
   display: flex;
   justify-content: center;
 

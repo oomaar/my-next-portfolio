@@ -76,12 +76,12 @@ export const CardTitle = styled.h3`
 export const CardDescription = styled.p`
   font-size: 1.1rem;
   color: ${({ theme }) => theme.colors.textColor};
-  height: 100px;
+  height: 90px;
 `;
 
 export const CardFooter = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-top: 1px solid ${({ theme }) => theme.colors.textColor};
   padding: 0.5rem 0;
@@ -94,7 +94,13 @@ export const CardFooterIcon = styled.a`
 `;
 
 export const CardFooterLink = styled.a`
-  font-size: 1.2rem;
-  color: ${({ theme }) => theme.colors.textColorLight};
-  letter-spacing: 0.1rem;
+  font-size: ${({ theme }) => theme.fontSize.h3FontSize};
+  font-weight: 700;
+  background-color: ${({ theme }) => theme.colors.buttonColor};
+  color: ${({ theme }) => theme.colors.buttonText};
+  border: 0;
+  outline: 0;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  transition: ${tansition_04};
 `;

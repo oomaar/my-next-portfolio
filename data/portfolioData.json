@@ -74,7 +74,8 @@
     {
       "id": 10,
       "title": "Node-JS",
-      "image": "/skills/node.png"
+      "image": "/skills/node.png",
+      "imageWhite": "/skills/node-white.png"
     },
     {
       "id": 11,

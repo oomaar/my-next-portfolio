@@ -10,8 +10,8 @@ export default function Home() {
       <Main>
         <Hero data={portfolioData.hero} />
         <About data={portfolioData.about} />
-        <Work data={portfolioData.portfolio} />
         <Skills data={portfolioData.skills} />
+        <Work data={portfolioData.portfolio} />
       </Main>
     </div>
   )

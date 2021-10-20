@@ -17,6 +17,10 @@ export const xlScreen = '1024px';
 export const transition_02 = "all 0.2s cubic-bezier(.175,.885,.32,1.275)";
 export const tansition_04 = "all 0.4s cubic-bezier(.175,.885,.32,1.275)";
 
+// Borders
+const borderColorLight = `4px solid #ff8243`;
+const borderColorDark = `4px solid #ef9fa7`;
+
 export const theme = {
   fontSize: {
     biggestFontSize: '5.8rem',
@@ -38,7 +42,7 @@ export const theme = {
 
 export const lightTheme = {
   colors: {
-    firstColor: `hsl(${hueColor}, 69%, 61%)`,
+    linkColor: `#BD1616`,
     firstColorSecond: `hsl(${hueColor}, 69%, 61%)`,
     firstColorAlt: `hsl(${hueColor}, 57%, 53%)`,
     firstColorLighter: `hsl(${hueColor}, 92%, 85%)`,
@@ -47,16 +51,18 @@ export const lightTheme = {
     textColorLight: `hsl(${hueColor}, 8%, 65%)`,
     inputColor: `hsl(${hueColor}, 70%, 96%)`,
     bodyColor: `#eee`,
-    containerColor: '#111',
+    borderColor: `${borderColorLight}`,
+    containerColor: 'rgba(210, 210, 210)',
+    cardColor: "#eee",
     scrollBarColor: `hsl(${hueColor}, 12%, 90%)`,
     scrollThumbColor: `hsl(${hueColor}, 12%, 80%)`,
-    textGradient: `linear-gradient(to right, #edca85, #e58cb7, #a166e9, #a0e9ff)`,
+    textGradient: `linear-gradient(to right, #ff8243, #c89595, #2c2891, #316b83)`,
   },
 };
 
 export const darkTheme = {
   colors: {
-    firstColor: `hsl(${hueColor}, 69%, 61%)`,
+    linkColor: `#edca85`,
     firstColorSecond: `hsl(${hueColor}, 30%, 8%)`,
     firstColorAlt: `hsl(${hueColor}, 57%, 53%)`,
     firstColorLighter: `hsl(${hueColor}, 92%, 85%)`,
@@ -65,7 +71,9 @@ export const darkTheme = {
     textColorLight: `hsl(${hueColor}, 8%, 65%)`,
     inputColor: `hsl(${hueColor}, 29%, 16%)`,
     bodyColor: `#111`,
-    containerColor: `#eee`,
+    borderColor: `${borderColorDark}`,
+    containerColor: `#222`,
+    cardColor: "#333",
     scrollBarColor: `hsl(${hueColor}, 12%, 48%)`,
     scrollThumbColor: `hsl(${hueColor}, 12%, 36%)`,
     textGradient: `linear-gradient(to right, #edca85, #e58cb7, #a166e9, #a0e9ff)`,
@@ -134,4 +142,13 @@ export const Main = styled.main`
   @media screen and (max-width: ${smScreen}) {
     padding: 0.5rem;
   }
+`;
+
+// Section Title
+export const Title = styled.h2`
+  background: ${({ theme }) => theme.colors.textGradient};
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
 `;

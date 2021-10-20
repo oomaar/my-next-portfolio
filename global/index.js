@@ -9,4 +9,5 @@ export {
     darkTheme,
     GlobalStyle,
     Main,
+    Title,
 } from "./styles/GlobalStyle";

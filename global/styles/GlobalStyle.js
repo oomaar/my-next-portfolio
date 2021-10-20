@@ -52,14 +52,16 @@ export const lightTheme = {
     shadowColor: `${shadowLight}`,
     titleColor: `hsl(${hueColor}, 8%, 15%)`,
     textColor: `hsl(${hueColor}, 8%, 45%)`,
-    textColorLight: `hsl(${hueColor}, 8%, 65%)`,
     bodyColor: `#eee`,
+    footerColor: "#fff",
     borderColor: `${borderColorLight}`,
     containerColor: 'rgba(210, 210, 210)',
     cardColor: "#eee",
     scrollBarColor: `hsl(${hueColor}, 12%, 90%)`,
+    scrollBarHover: `hsl(${hueColor}, 8%, 65%)`,
     scrollThumbColor: `hsl(${hueColor}, 12%, 80%)`,
     textGradient: `linear-gradient(to right, #ff8243, #c89595, #2c2891, #316b83)`,
+    iconColor: ``
   },
 };
 
@@ -71,14 +73,16 @@ export const darkTheme = {
     shadowColor: `${shadowDark}`,
     titleColor: `hsl(${hueColor}, 8%, 95%)`,
     textColor: `hsl(${hueColor}, 8%, 75%)`,
-    textColorLight: `hsl(${hueColor}, 8%, 65%)`,
     bodyColor: `#111`,
+    footerColor: "#000",
     borderColor: `${borderColorDark}`,
     containerColor: `#222`,
     cardColor: "#333",
     scrollBarColor: `hsl(${hueColor}, 12%, 48%)`,
+    scrollBarHover: `hsl(${hueColor}, 8%, 65%)`,
     scrollThumbColor: `hsl(${hueColor}, 12%, 36%)`,
     textGradient: `linear-gradient(to right, #edca85, #e58cb7, #a166e9, #a0e9ff)`,
+    iconColor: ``
   },
 };
 
@@ -131,7 +135,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background-color: ${({ theme }) => theme.colors.textColorLight};
+    background-color: ${({ theme }) => theme.colors.scrollBarHover};
   }
 `;
 
@@ -169,6 +173,11 @@ export const Container = styled.div`
   @media screen and (max-width: ${mdScreen}) {
     width: 100%;
   }
+`;
+
+export const Icon = styled.a`
+  font-size: 2rem;
+  color: ${({ theme }) => theme.colors.textColor};
 `;
 
 // Section Title

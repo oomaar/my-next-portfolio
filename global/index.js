@@ -12,4 +12,5 @@ export {
     Title,
     Section,
     Container,
+    Icon,
 } from "./styles/GlobalStyle";

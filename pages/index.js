@@ -11,7 +11,7 @@ export default function Home() {
         <Hero data={portfolioData.hero} />
         <About data={portfolioData.about} />
         <Skills data={portfolioData.skills} />
-        <Work data={portfolioData.portfolio} />
+        {/* <Work data={portfolioData.portfolio} /> */}
         <Contact data={portfolioData.contact} />
       </Main>
     </div>

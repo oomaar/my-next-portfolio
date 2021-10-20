@@ -46,7 +46,7 @@ export const Link = styled.a`
   transition: ${transition_02};
 
   :hover {
-    border-bottom: 4px solid #ef9fa7;
+    border-bottom: ${({ theme }) => theme.colors.borderColor};
   }
 `;
 

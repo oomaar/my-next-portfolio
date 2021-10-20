@@ -10,4 +10,6 @@ export {
     GlobalStyle,
     Main,
     Title,
+    Section,
+    Container,
 } from "./styles/GlobalStyle";

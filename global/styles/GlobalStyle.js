@@ -144,6 +144,31 @@ export const Main = styled.main`
   }
 `;
 
+export const Section = styled.section`
+  margin-top: 10rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: ${xlScreen}) {
+    margin-top: 0;
+  }
+`;
+
+export const Container = styled.div`
+  background: ${({ theme }) => theme.colors.containerColor};
+  width: 80%;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: ${mdScreen}) {
+    width: 100%;
+  }
+`;
+
 // Section Title
 export const Title = styled.h2`
   background: ${({ theme }) => theme.colors.textGradient};

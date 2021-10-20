@@ -137,12 +137,16 @@ export const TheEye = styled.div`
   pointer-events: none;
 `;
 
-export const SocialBox = styled.div`
+export const Icons = styled.div`
   display: flex;
   width: 25%;
   gap: 2rem;
   font-size: clamp(1.3rem, 2vw, 1.5rem);
   transition: ${tansition_04};
+
+  svg {
+    color: #eee;
+  }
 
   @media screen and (max-width: ${lgScreen}) {
     gap: 1rem;

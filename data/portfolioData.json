@@ -3,19 +3,23 @@
     "links": [
       {
         "id": 1,
-        "title": "About"
+        "title": "About",
+        "href": "#about"
       },
       {
         "id": 2,
-        "title": "Skills"
+        "title": "Skills",
+        "href": "#skills"
       },
       {
         "id": 3,
-        "title": "Work"
+        "title": "Work",
+        "href": "/work"
       },
       {
         "id": 4,
-        "title": "Contact"
+        "title": "Contact",
+        "href": "#contact"
       }
     ]
   },

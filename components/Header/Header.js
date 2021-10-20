@@ -1,10 +1,12 @@
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { SiWhatsapp } from "react-icons/si";
 import { BsMoon } from "react-icons/bs";
 import { BiSun } from "react-icons/bi";
 import portfolioData from "../../data/portfolioData.json";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { darkValue, setDarkMode } from "../../redux/slices/darkSlice";
+import NextLink from "next/link";
 import {
     HeaderTag,
     LinksList,
@@ -15,8 +17,9 @@ import {
     Ball,
     Lashes,
     Lash,
-    SocialBox,
+    Icons,
 } from "./styledHeader";
+import { Icon } from "../../global";
 
 export const Header = () => {
     const dispatch = useDispatch();
@@ -24,7 +27,9 @@ export const Header = () => {
 
     const links = portfolioData.header.links.map(link => (
         <li key={link.id}>
-            <Link>{link.title}</Link>
+            <NextLink href={link.href}>
+                <Link>{link.title}</Link>
+            </NextLink>
         </li>
     ));
 
@@ -61,17 +66,17 @@ export const Header = () => {
                     </Eye>
                 </EyeContainer>
             </TheEye>
-            <SocialBox>
-                <a>
-                    <FaGithub />
-                </a>
-                <a>
-                    <FaWhatsapp />
-                </a>
-                <a>
+            <Icons>
+                <Icon>
+                    <FiGithub />
+                </Icon>
+                <Icon>
+                    <SiWhatsapp />
+                </Icon>
+                <Icon>
                     {darkConst === "light" ? <BsMoon onClick={() => handleDark()} /> : <BiSun onClick={() => handleLight()} />}
-                </a>
-            </SocialBox>
+                </Icon>
+            </Icons>
 
         </HeaderTag>
     );

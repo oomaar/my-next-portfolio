@@ -54,18 +54,20 @@ export const Header = () => {
             <LinksList>
                 {links}
             </LinksList>
-            <TheEye>
-                <EyeContainer>
-                    <Lashes>
-                        <Lash className="lash__1"></Lash>
-                        <Lash className="lash__2"></Lash>
-                        <Lash className="lash__3"></Lash>
-                    </Lashes>
-                    <Eye>
-                        <Ball className="ball"></Ball>
-                    </Eye>
-                </EyeContainer>
-            </TheEye>
+            <NextLink href="/">
+                <TheEye>
+                    <EyeContainer>
+                        <Lashes>
+                            <Lash className="lash__1"></Lash>
+                            <Lash className="lash__2"></Lash>
+                            <Lash className="lash__3"></Lash>
+                        </Lashes>
+                        <Eye>
+                            <Ball className="ball"></Ball>
+                        </Eye>
+                    </EyeContainer>
+                </TheEye>
+            </NextLink>
             <Icons>
                 <Icon>
                     <FiGithub />

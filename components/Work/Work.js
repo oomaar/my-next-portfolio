@@ -1,18 +1,20 @@
-import { Container, Section, Title } from "../../global";
-import { FaGithub } from "react-icons/fa";
+import { Title } from "../../global";
 import { useState } from "react";
 import {
+    WorkContainer,
     Navigation,
     NavLinks,
     CardsContainer,
     Card,
+    ImgContainer,
     CardImg,
     CardSubContainer,
     CardTitle,
-    CardDescription,
     CardFooter,
-    CardFooterIcon,
     CardFooterLink,
+    CardTools,
+    CardTool,
+    CardToolImg,
 } from "./styledWork";
 
 export const Work = ({ data }) => {
@@ -20,15 +22,23 @@ export const Work = ({ data }) => {
 
     const clonesArray = data.clones.map(clone => (
         <Card key={clone.id}>
-            <CardImg src={clone.image} />
-            <CardTitle>{clone.title}</CardTitle>
             <CardSubContainer>
-                <CardDescription>{clone.description}</CardDescription>
+                <ImgContainer>
+                    <CardImg src={clone.image} />
+                </ImgContainer>
+                <CardTitle>{clone.title}</CardTitle>
+            </CardSubContainer>
+            <CardSubContainer>
+                <CardTools>
+                    {clone.tools.map(tool => (
+                        <CardTool key={tool.id}>
+                            <CardToolImg src={tool.icon} />
+                        </CardTool>
+                    ))}
+                </CardTools>
                 <CardFooter>
-                    <CardFooterIcon href="#">
-                        <FaGithub />
-                    </CardFooterIcon>
-                    <CardFooterLink href={clone.url}>Live Preview</CardFooterLink>
+                    <CardFooterLink href={clone.url} target="_blank">Live Preview</CardFooterLink>
+                    <CardFooterLink href={clone.url} target="_blank">Read More</CardFooterLink>
                 </CardFooter>
             </CardSubContainer>
         </Card>
@@ -36,15 +46,23 @@ export const Work = ({ data }) => {
 
     const schoolArray = data.school.map(school => (
         <Card key={school.id}>
-            <CardImg src={school.image} />
-            <CardTitle>{school.title}</CardTitle>
             <CardSubContainer>
-                <CardDescription>{school.description}</CardDescription>
+                <ImgContainer>
+                    <CardImg src={school.image} />
+                </ImgContainer>
+                <CardTitle>{school.title}</CardTitle>
+            </CardSubContainer>
+            <CardSubContainer>
+                <CardTools>
+                    {school.tools.map(tool => (
+                        <CardTool key={tool.id}>
+                            <CardToolImg src={tool.icon} />
+                        </CardTool>
+                    ))}
+                </CardTools>
                 <CardFooter>
-                    <CardFooterIcon href="#">
-                        <FaGithub />
-                    </CardFooterIcon>
-                    <CardFooterLink href={school.url}>Live Preview</CardFooterLink>
+                    <CardFooterLink href={school.url} target="_blank">Live Preview</CardFooterLink>
+                    <CardFooterLink href={school.url} target="_blank">Read More</CardFooterLink>
                 </CardFooter>
             </CardSubContainer>
         </Card>
@@ -52,61 +70,59 @@ export const Work = ({ data }) => {
 
     const freeLanceArray = data.freeLance.map(free => (
         <Card key={free.id}>
-            <CardImg src={free.image} />
-            <CardTitle>{free.title}</CardTitle>
             <CardSubContainer>
-                <CardDescription>{free.description}</CardDescription>
+                <ImgContainer>
+                    <CardImg src={free.image} />
+                </ImgContainer>
+                <CardTitle>{free.title}</CardTitle>
+            </CardSubContainer>
+            <CardSubContainer>
+                <CardTools>
+                    {free.tools.map(tool => (
+                        <CardTool key={tool.id}>
+                            <CardToolImg src={tool.icon} />
+                        </CardTool>
+                    ))}
+                </CardTools>
                 <CardFooter>
-                    <CardFooterIcon href="#">
-                        <FaGithub />
-                    </CardFooterIcon>
-                    <CardFooterLink href={free.url}>Live Preview</CardFooterLink>
+                    <CardFooterLink href={free.url} target="_blank">Live Preview</CardFooterLink>
+                    <CardFooterLink href={free.url} target="_blank">Read More</CardFooterLink>
                 </CardFooter>
             </CardSubContainer>
         </Card>
     ));
 
     return (
-        <Section work id="work">
-            <Container>
-                <Title>Works</Title>
+        <WorkContainer>
+            <Title>Works</Title>
 
-                <Navigation>
-                    <NavLinks
-                        onClick={() => setCategory("all")}
-                    >
-                        All
-                    </NavLinks>
-                    <NavLinks
-                        onClick={() => setCategory("clones")}
-                    >
-                        Clones
-                    </NavLinks>
-                    <NavLinks
-                        onClick={() => setCategory("school")}
-                    >
-                        School
-                    </NavLinks>
-                    <NavLinks
-                        onClick={() => setCategory("free")}
-                    >
-                        Freelance
-                    </NavLinks>
-                </Navigation>
+            <Navigation>
+                <NavLinks onClick={() => setCategory("all")}>
+                    All
+                </NavLinks>
+                <NavLinks onClick={() => setCategory("clones")}>
+                    Clones
+                </NavLinks>
+                <NavLinks onClick={() => setCategory("school")}>
+                    School
+                </NavLinks>
+                <NavLinks onClick={() => setCategory("free")}>
+                    Freelance
+                </NavLinks>
+            </Navigation>
 
-                <CardsContainer>
-                    {category === "all" && (
-                        <>
-                            {clonesArray}
-                            {schoolArray}
-                            {freeLanceArray}
-                        </>
-                    )}
-                    {category === "clones" && clonesArray}
-                    {category === "school" && schoolArray}
-                    {category === "free" && freeLanceArray}
-                </CardsContainer>
-            </Container>
-        </Section>
+            <CardsContainer>
+                {category === "all" && (
+                    <>
+                        {clonesArray}
+                        {schoolArray}
+                        {freeLanceArray}
+                    </>
+                )}
+                {category === "clones" && clonesArray}
+                {category === "school" && schoolArray}
+                {category === "free" && freeLanceArray}
+            </CardsContainer>
+        </WorkContainer>
     );
 };

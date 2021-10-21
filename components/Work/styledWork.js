@@ -2,6 +2,12 @@ import styled from 'styled-components';
 import { mdScreen, xlScreen, lgScreen } from '../../global';
 import { tansition_04 } from '../../global/styles/GlobalStyle';
 
+export const WorkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const Navigation = styled.nav`
   display: flex;
   justify-content: center;
@@ -30,15 +36,18 @@ export const NavLinks = styled.button`
 export const CardsContainer = styled.div`
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 2rem;
-  overflow-y: scroll;
 
   @media screen and (max-width: ${xlScreen}) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media screen and (max-width: ${lgScreen}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: ${mdScreen}) {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -47,60 +56,74 @@ export const CardsContainer = styled.div`
   }
 `;
 
+// Single Card
 export const Card = styled.div`
-  background: ${({ theme }) => theme.colors.cardColor};
-  height: 500px;
+  background-color: ${({ theme }) => theme.colors.containerColor};
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  justify-content: space-between;
+`;
+
+export const ImgContainer = styled.div`
+  align-self: center;
+  margin-top: 1rem;
+  border-radius: 100%;
+  box-shadow: ${({ theme }) => theme.colors.imageShadow};
+  height: 150px;
+  width: 150px;
 `;
 
 export const CardImg = styled.img`
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  cursor: pointer;
-  height: 265px;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 export const CardSubContainer = styled.div`
+  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  padding: 0 0.5rem;
 `;
 
 export const CardTitle = styled.h3`
   text-align: center;
   font-size: 1.6rem;
-  margin: 0;
   color: ${({ theme }) => theme.colors.titleColor};
 `;
 
-export const CardDescription = styled.p`
-  font-size: 1.1rem;
-  color: ${({ theme }) => theme.colors.textColor};
-  height: 90px;
+export const CardTools = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+`;
+
+export const CardTool = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const CardToolImg = styled.img`
+  width: 40px;
 `;
 
 export const CardFooter = styled.div`
+  border-top: 1px solid ${({ theme }) => theme.colors.textColor};
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid ${({ theme }) => theme.colors.textColor};
-  padding: 0.5rem 0;
-`;
-
-export const CardFooterIcon = styled.a`
-  font-size: 2rem;
-  cursor: pointer;
-  color: ${({ theme }) => theme.colors.titleColor};
 `;
 
 export const CardFooterLink = styled.a`
   font-size: ${({ theme }) => theme.fontSize.h3FontSize};
   font-weight: 700;
-  background-color: ${({ theme }) => theme.colors.buttonColor};
-  color: ${({ theme }) => theme.colors.buttonText};
+  color: ${({ theme }) => theme.colors.linkColor};
   border: 0;
   outline: 0;
   border-radius: 1rem;
-  padding: 0.5rem 1rem;
   transition: ${tansition_04};
 `;

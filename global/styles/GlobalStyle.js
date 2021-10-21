@@ -25,6 +25,9 @@ const borderColorDark = `4px solid #ef9fa7`;
 const shadowLight = '0px 10px 15px -3px hsla(0, 0%, 0%, 0.06), 0px 4px 6px -2px hsla(0, 0%, 0%, 0.05)';
 const shadowDark = '0px 10px 15px -3px hsla(220, 13%, 91%, 0.06), 0px 4px 6px -2px hsla(220, 13%, 91%, 0.05)';
 
+const imgShadowLight = `0px 4px 30px hsla(0, 0%, 0%, 0.5)`;
+const imgShadowDark = `0px 4px 30px hsla(0, 100%, 100%, 0.1)`;
+
 export const theme = {
   fontSize: {
     biggestFontSize: '5.8rem',
@@ -46,10 +49,11 @@ export const theme = {
 
 export const lightTheme = {
   colors: {
-    linkColor: `#bd1616`,
+    linkColor: `#000`,
     buttonText: `#fff`,
     buttonColor: `hsl(240, 42%, 65%)`,
     shadowColor: `${shadowLight}`,
+    imageShadow: `${imgShadowLight}`,
     titleColor: `hsl(${hueColor}, 8%, 15%)`,
     textColor: `hsl(${hueColor}, 8%, 45%)`,
     bodyColor: `#eee`,
@@ -71,6 +75,7 @@ export const darkTheme = {
     buttonText: `#333`,
     buttonColor: `#82b42f`,
     shadowColor: `${shadowDark}`,
+    imageShadow: `${imgShadowDark}`,
     titleColor: `hsl(${hueColor}, 8%, 95%)`,
     textColor: `hsl(${hueColor}, 8%, 75%)`,
     bodyColor: `#111`,
@@ -152,7 +157,6 @@ export const Main = styled.main`
 
 export const Section = styled.section`
   margin-top: 10rem;
-  height: ${({ work }) => work ? "100vh" : "auto"};
   display: flex;
   justify-content: center;
 

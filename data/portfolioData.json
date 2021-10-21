@@ -99,6 +99,23 @@
         "title": "Netflix App",
         "image": "/portfolio/netflix.jpg",
         "url": "https://dreamy-meninsky-4d3cd3.netlify.app/",
+        "tools": [
+          {
+            "id": 1,
+            "title": "ReactJS",
+            "icon": "/skills/react.png"
+          },
+          {
+            "id": 2,
+            "title": "Sass",
+            "icon": "/skills/Sass.png"
+          },
+          {
+            "id": 3,
+            "title": "Firebase",
+            "icon": "/skills/onfire.png"
+          }
+        ],
         "description": "Netflix Clone project built with ReactJS, Styled with styled-components, powerd by firebase authentication and database."
       },
       {
@@ -106,6 +123,23 @@
         "title": "hulu Clone",
         "image": "/portfolio/hulu.png",
         "url": "https://hulu-clone-xi-wheat.vercel.app/",
+        "tools": [
+          {
+            "id": 1,
+            "title": "NextJS",
+            "icon": "/skills/next.png"
+          },
+          {
+            "id": 2,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          },
+          {
+            "id": 3,
+            "title": "Firebase",
+            "icon": "/skills/onfire.png"
+          }
+        ],
         "description": "This Project was built using NextJS and Styled-components"
       },
       {
@@ -113,6 +147,23 @@
         "title": "Twitter Clone",
         "image": "/portfolio/twitter.jpg",
         "url": "https://twitter-4e819.web.app/",
+        "tools": [
+          {
+            "id": 1,
+            "title": "ReactJS",
+            "icon": "/skills/react.png"
+          },
+          {
+            "id": 2,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          },
+          {
+            "id": 3,
+            "title": "Firebase",
+            "icon": "/skills/onfire.png"
+          }
+        ],
         "description": "Fully Responsive Twitter Clone developed with ReactJS, Styled-components and Firebase."
       },
       {
@@ -120,6 +171,23 @@
         "title": "Google Clone",
         "image": "/portfolio/google.jpg",
         "url": "https://google-clone-tailwind-delta.vercel.app/",
+        "tools": [
+          {
+            "id": 1,
+            "title": "NextJS",
+            "icon": "/skills/next.png"
+          },
+          {
+            "id": 2,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          },
+          {
+            "id": 3,
+            "title": "Firebase",
+            "icon": "/skills/onfire.png"
+          }
+        ],
         "description": "Devloped my own search engine (The Google Clone) with NextJS and Tailwind-CSS."
       },
       {
@@ -127,6 +195,23 @@
         "title": "Whatsapp Clone",
         "image": "/portfolio/whatsapp.jpg",
         "url": "https://whatsapp-clone-oomaar.vercel.app/",
+        "tools": [
+          {
+            "id": 1,
+            "title": "NextJS",
+            "icon": "/skills/next.png"
+          },
+          {
+            "id": 2,
+            "title": "CSS",
+            "icon": "/skills/css.png"
+          },
+          {
+            "id": 3,
+            "title": "Firebase",
+            "icon": "/skills/onfire.png"
+          }
+        ],
         "description": "Developed using NextJS, Tailwind-CSS and Firebase."
       },
       {
@@ -134,6 +219,18 @@
         "title": "Geforce Clone",
         "image": "/portfolio/geforce.jpg",
         "url": "https://geforce-clone-oomaar.vercel.app/",
+        "tools": [
+          {
+            "id": 1,
+            "title": "NextJS",
+            "icon": "/skills/next.png"
+          },
+          {
+            "id": 2,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          }
+        ],
         "description": "Developed using NextJS and styled-components."
       },
       {
@@ -141,6 +238,28 @@
         "title": "Amazon Re-Design",
         "image": "/portfolio/amazon-redesign.jpg",
         "url": "https://amazon-clone-redesign-nnetig0ha-oomaar.vercel.app/",
+        "tools": [
+          {
+            "id": 1,
+            "title": "NextJS",
+            "icon": "/skills/next.png"
+          },
+          {
+            "id": 2,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          },
+          {
+            "id": 3,
+            "title": "Redux",
+            "icon": "/skills/redux.png"
+          },
+          {
+            "id": 4,
+            "title": "MongoDB",
+            "icon": "/skills/mongo.png"
+          }
+        ],
         "description": "Developed using NextJS, Redux and styled-components."
       }
     ],
@@ -150,6 +269,18 @@
         "title": "Makeup Store Demo",
         "image": "/portfolio/makeup.jpg",
         "url": "https://serene-spence-a7962f.netlify.app/",
+        "tools": [
+          {
+            "id": 1,
+            "title": "ReactJS",
+            "icon": "/skills/react.png"
+          },
+          {
+            "id": 2,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          }
+        ],
         "description": "Developed Fully Responsive with ReactJS and Styled-components."
       },
       {
@@ -157,6 +288,18 @@
         "title": "Covid-19 Tracker",
         "image": "/portfolio/covid-tracker.jpg",
         "url": "https://covid-19-tracker-16970.web.app/",
+        "tools": [
+          {
+            "id": 1,
+            "title": "ReactJS",
+            "icon": "/skills/react.png"
+          },
+          {
+            "id": 2,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          }
+        ],
         "description": "Fully Responsive covid-19 Tracker using ReactJS and Styled Components."
       }
     ],
@@ -166,6 +309,38 @@
         "title": "Animation Portfolio",
         "image": "/portfolio/my-animation-portfolio.jpg",
         "url": "https://omars-portfolio.vercel.app/",
+        "tools": [
+          {
+            "id": 1,
+            "title": "NextJS",
+            "icon": "/skills/next.png"
+          },
+          {
+            "id": 2,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          },
+          {
+            "id": 3,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          },
+          {
+            "id": 4,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          },
+          {
+            "id": 6,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          },
+          {
+            "id": 7,
+            "title": "Sass",
+            "icon": "/skills/sass.png"
+          }
+        ],
         "description": "Fully Responsive covid-19 Tracker using ReactJS and Styled Components."
       }
     ]

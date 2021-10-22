@@ -11,9 +11,9 @@ export const Layout = ({ children }) => {
         <ThemeProvider theme={theme}>
             <ThemeProvider theme={darkThemeState === 'light' ? lightTheme : darkTheme}>
                 <GlobalStyle />
-                <Header />
+                {/* <Header /> */}
                 {children}
-                <Footer />
+                {/* <Footer /> */}
             </ThemeProvider>
         </ThemeProvider>
     );

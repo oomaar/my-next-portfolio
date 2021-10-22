@@ -10,9 +10,9 @@ export const WorkContainer = () => {
         <Container>
             <Headtag title="Omar's Portfolio | Works" />
 
-            <Main>
-                <Work data={portfolioData.portfolio} />
-            </Main>
+            {/* <Main> */}
+            <Work data={portfolioData.portfolio} />
+            {/* </Main> */}
         </Container>
     );
 };

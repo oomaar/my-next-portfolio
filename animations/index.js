@@ -1,0 +1,1 @@
+export { routeVariants } from "./variants";

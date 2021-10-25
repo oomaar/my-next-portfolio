@@ -8,3 +8,4 @@ export { Contact } from "./Contact/Contact";
 export { Footer } from "./Footer/Footer";
 export { ProjectMind } from "./ProjectMind/ProjectMind";
 export { Navigation } from "./Navigation/Navigation";
+export { Services } from "./Services/Services";

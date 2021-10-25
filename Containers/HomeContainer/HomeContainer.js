@@ -12,7 +12,7 @@ export const HomeContainer = () => {
 
             <Main>
                 <Hero data={portfolioData.hero} />
-                <Services />
+                <Services data={portfolioData.services} />
                 <Navigation />
                 {/* <About data={portfolioData.about} /> */}
                 {/* <Skills data={portfolioData.skills} /> */}

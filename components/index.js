@@ -9,3 +9,4 @@ export { Footer } from "./Footer/Footer";
 export { ProjectMind } from "./ProjectMind/ProjectMind";
 export { Navigation } from "./Navigation/Navigation";
 export { Services } from "./Services/Services";
+export { ServiceModal } from "./ServiceModal/ServiceModal";

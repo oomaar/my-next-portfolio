@@ -177,5 +177,59 @@
       }
     ]
   },
-  "contact": {}
+  "contact": {},
+  "services": {
+    "modals": {
+      "front": [
+        {
+          "id": 0,
+          "service": "Responsive Web Designing."
+        },
+        {
+          "id": 1,
+          "service": "Convert Xd, PSD, & JPG files into a responsive and pixel perfect website."
+        },
+        {
+          "id": 2,
+          "service": "Convert HTML, CSS & Javascript to React App."
+        },
+        {
+          "id": 3,
+          "service": "Build complex frontends."
+        }
+      ],
+      "back": [
+        {
+          "id": 0,
+          "service": "Build a NodeJS, Express Server."
+        },
+        {
+          "id": 1,
+          "service": "Develop and Maintain MongoDB Database."
+        },
+        {
+          "id": 2,
+          "service": "Build a Firebase App."
+        },
+        {
+          "id": 3,
+          "service": "Handle Route request and response."
+        }
+      ],
+      "design": [
+        {
+          "id": 0,
+          "service": "Photo-Edit on Photoshop."
+        },
+        {
+          "id": 1,
+          "service": "Logo Design on Illustrator."
+        },
+        {
+          "id": 2,
+          "service": "Branding."
+        }
+      ]
+    }
+  }
 }

@@ -12,9 +12,9 @@ export const HomeContainer = () => {
 
             <Main>
                 <Hero data={portfolioData.hero} />
-                <About data={portfolioData.about} />
-                <Skills data={portfolioData.skills} />
-                <Contact data={portfolioData.contact} />
+                {/* <About data={portfolioData.about} /> */}
+                {/* <Skills data={portfolioData.skills} /> */}
+                {/* <Contact data={portfolioData.contact} /> */}
             </Main>
         </Container>
     );

@@ -45,8 +45,8 @@ export const projectMindVariants = {
         scale: 1.1,
         textShadow: "0px 0px 8px rgb(255, 255, 255)",
         transition: {
-            duration: 0.5,
-            yoyo: Infinity
+            duration: 1,
+            repeat: 1
         }
     }
 };

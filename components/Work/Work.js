@@ -21,14 +21,14 @@ export const Work = ({ data }) => {
     const cloneLen = data.clones.length - 1;
 
     const cloneData = data.clones.map(clone => (
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence exitBeforeEnter key={clone.id}>
             <motion.div
                 variants={slideVariants}
                 initial="hidden"
                 animate="visable"
                 exit="exit"
             >
-                <Slide key={clone.id} className={clone.id === activeIndex ? "active" : "inactive"}>
+                <Slide className={clone.id === activeIndex ? "active" : "inactive"}>
                     <motion.div variants={slideImageVariants} initial="hidden" animate="visable">
                         <SlideImageContainer>
                             <SlideImage src={clone.image} />

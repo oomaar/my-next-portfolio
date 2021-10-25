@@ -1,123 +1,87 @@
 import styled from 'styled-components';
+import { lgScreen, mdScreen, xlScreen } from '../../global';
 
 export const CarouselContainer = styled.div`
   position: relative;
-  top: 100px;
-  max-width: 100%;
-  margin-bottom: 20px;
-  padding: 0 10px;
-  height: 60vh;
-
-  @media screen and (max-width: 1000px) {
-    height: 50vh;
-  }
 `;
 
 export const Slider = styled.div`
-  width: 70%;
-  height: 100%;
-  margin-left: auto;
-  z-index: 0;
+  width: 90%;
+  margin: 0 auto;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: ${xlScreen}) {
     width: 100%;
-    height: 70%;
   }
-`;
-
-export const SubContainer = styled.div`
-  height: 100%;
-  width: 100%;
 `;
 
 export const Slide = styled.div`
   display: none;
   z-index: 0;
-  width: 100%;
-  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 
   &.active {
-      display: inline-block;
+    display: flex;
+  }
+
+  @media screen and (max-width: ${lgScreen}) {
+    flex-direction: column;
+  }
+`;
+
+export const SlideImageContainer = styled.div`
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: ${lgScreen}) {
+    height: 350px;
   }
 `;
 
 export const SlideImage = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  border-radius: 1rem;
+  width: 450px;
 
-  @media screen and (max-width: 1000px) {
-      margin: 100px 0 0;
+  @media screen and (max-width: ${xlScreen}) {
+    width: 350px;
+  }
+
+  @media screen and (max-width: ${lgScreen}) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: ${mdScreen}) {
+    width: 270px;
   }
 `;
 
 export const CarouselFeature = styled.div`
-  position: absolute;
-  top: 35%;
-  left: 18%;
-  z-index: 200;
+  width: 50%;
 
-  @media screen and (max-width: 1000px) {
-    top: 5%;
-    left: 5%;
+  @media screen and (max-width: ${lgScreen}) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: ${mdScreen}) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
   }
 `;
 
 export const Title = styled.h1`
-  color: ${({ loon }) => loon};
   font-size: clamp(2.092rem, 5vw, 4rem);
-  text-transform: uppercase;
-  font-family: 'Geforce', Helvetica, sans-serif;
 `;
 
 export const SubTitle = styled.h1`
-  color: ${({ loon }) => loon};
-  font-family: 'Geforce', Helvetica, sans-serif;
-  max-width: 450px;
-  text-transform: uppercase;
   font-size: clamp(1.125rem, 3vw, 1.625rem);
 `;
 
-export const Dots = styled.div`
-    position: absolute;
-    top: calc(100% + 5rem);
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    z-index: 100;
-`;
-
-export const Dot = styled.span`
-    display: inline-block;
-    cursor: pointer;
-    height: 0.8rem;
-    width: 0.8rem;
-    margin: 0 5px;
-    background-color: #808080;
-    border-radius: 50%;
-    transition: all 0.5s ease;
-    &.active-dot {
-        background-color: ${({ theme }) => theme.colors.primary};
-        &:hover {
-            background-color: ${({ theme }) => theme.colors.hover};
-        }
-    }
-    &:hover {
-        transform: scale(1.2);
-    }
-`;
-
-export const Arrows = styled.div`
-    position: absolute;
-    top: 60%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    z-index: 100;
-`;
 
 export const Arrow = styled.span`
     cursor: pointer;
@@ -129,14 +93,70 @@ export const Arrow = styled.span`
     font-weight: bold;
     border-radius: 0 5px 5px 0;
     transition: 0.5s ease-in-out;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.buttonColor};
+    
+    
     &:hover {
-        color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
+    
     &.prev {
-        margin-right: auto;
+      margin-right: auto;
     }
+    
     &.next {
-        margin-left: auto;
+      margin-left: auto;
     }
+`;
+
+export const Arrows = styled.div`
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  z-index: 100;
+
+  @media screen and (max-width: ${xlScreen}) {
+    top: 85%;
+  }
+
+  @media screen and (max-width: ${lgScreen}) {
+    top: 30%;
+  }
+
+  @media screen and (max-width: 400px) {
+    top: 50%;
+  }
+`;
+
+export const Dots = styled.div`
+  position: absolute;
+  top: calc(100% + 2.5rem);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+`;
+
+export const Dot = styled.span`
+  display: inline-block;
+  cursor: pointer;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0 5px;
+  background-color: #808080;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+
+  &.active-dot {
+    background-color: ${({ theme }) => theme.colors.buttonColor};
+  }
+    
+  &:hover {
+    transform: scale(1.2);
+  }
 `;

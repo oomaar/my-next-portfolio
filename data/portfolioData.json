@@ -95,49 +95,49 @@
   "portfolio": {
     "clones": [
       {
-        "id": 1,
+        "id": 0,
         "title": "Netflix App",
         "image": "/portfolio/circle/netflix-circle.jpg",
         "url": "https://dreamy-meninsky-4d3cd3.netlify.app/",
         "description": "Netflix Clone project built with ReactJS, Styled with styled-components, powerd by firebase authentication and database."
       },
       {
-        "id": 2,
+        "id": 1,
         "title": "hulu Clone",
         "image": "/portfolio/hulu.png",
         "url": "https://hulu-clone-xi-wheat.vercel.app/",
         "description": "This Project was built using NextJS and Styled-components"
       },
       {
-        "id": 3,
+        "id": 2,
         "title": "Twitter Clone",
         "image": "/portfolio/circle/twitter-circle.jpg",
         "url": "https://twitter-4e819.web.app/",
         "description": "Fully Responsive Twitter Clone developed with ReactJS, Styled-components and Firebase."
       },
       {
-        "id": 4,
+        "id": 3,
         "title": "Google Clone",
         "image": "/portfolio/google.jpg",
         "url": "https://google-clone-tailwind-delta.vercel.app/",
         "description": "Devloped my own search engine (The Google Clone) with NextJS and Tailwind-CSS."
       },
       {
-        "id": 5,
+        "id": 4,
         "title": "Whatsapp Clone",
         "image": "/portfolio/circle/whatsapp-circle.jpg",
         "url": "https://whatsapp-clone-oomaar.vercel.app/",
         "description": "Developed using NextJS, Tailwind-CSS and Firebase."
       },
       {
-        "id": 6,
+        "id": 5,
         "title": "Geforce Clone",
         "image": "/portfolio/circle/geforce-circle.jpg",
         "url": "https://geforce-clone-oomaar.vercel.app/",
         "description": "Developed using NextJS and styled-components."
       },
       {
-        "id": 7,
+        "id": 6,
         "title": "Amazon Re-Design",
         "image": "/portfolio/circle/amazon-circle.jpg",
         "url": "https://amazon-clone-redesign-nnetig0ha-oomaar.vercel.app/",
@@ -146,14 +146,14 @@
     ],
     "school": [
       {
-        "id": 1,
+        "id": 0,
         "title": "Makeup Store Demo",
         "image": "/portfolio/makeup.jpg",
         "url": "https://serene-spence-a7962f.netlify.app/",
         "description": "Developed Fully Responsive with ReactJS and Styled-components."
       },
       {
-        "id": 2,
+        "id": 1,
         "title": "Covid-19 Tracker",
         "image": "/portfolio/circle/covid-tracker-circle.jpg",
         "url": "https://covid-19-tracker-16970.web.app/",
@@ -162,14 +162,14 @@
     ],
     "freeLance": [
       {
-        "id": 1,
+        "id": 0,
         "title": "Animation Portfolio",
         "image": "/portfolio/my-animation-portfolio.jpg",
         "url": "https://omars-portfolio.vercel.app/",
         "description": "Fully Responsive covid-19 Tracker using ReactJS and Styled Components."
       },
       {
-        "id": 2,
+        "id": 1,
         "title": "Beats Shop",
         "image": "/portfolio/circle/beats-circle.jpg",
         "url": "https://beats-shop.vercel.app/",

@@ -1,33 +1,48 @@
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { slideFeatureVariants, slideImageVariants, slideVariants } from "../../animations";
 import {
     CarouselContainer,
-
     Slider,
-    SubContainer,
     Slide,
     SlideImage,
+    SlideImageContainer,
     CarouselFeature,
     Title,
     SubTitle,
-
-    Dots,
-    Dot,
     Arrows,
     Arrow,
+    Dots,
+    Dot,
 } from "./styledWork";
 
 export const Work = ({ data }) => {
-    const [activeIndex, setActiveIndex] = useState(1);
+    const [activeIndex, setActiveIndex] = useState(0);
     const cloneLen = data.clones.length - 1;
 
     const cloneData = data.clones.map(clone => (
-        <Slide key={clone.id} className={clone.id === activeIndex ? "active" : "inactive"}>
-            <SlideImage src={clone.image} />
-            <CarouselFeature>
-                <Title>{clone.title}</Title>
-                <SubTitle>{clone.description}</SubTitle>
-            </CarouselFeature>
-        </Slide>
+        <AnimatePresence exitBeforeEnter>
+            <motion.div
+                variants={slideVariants}
+                initial="hidden"
+                animate="visable"
+                exit="exit"
+            >
+                <Slide key={clone.id} className={clone.id === activeIndex ? "active" : "inactive"}>
+                    <motion.div variants={slideImageVariants} initial="hidden" animate="visable">
+                        <SlideImageContainer>
+                            <SlideImage src={clone.image} />
+                        </SlideImageContainer>
+                    </motion.div>
+                    <CarouselFeature>
+                        <motion.div variants={slideFeatureVariants} initial="hidden" animate="visable">
+                            <Title>{clone.title}</Title>
+                            <SubTitle>{clone.description}</SubTitle>
+                        </motion.div>
+                    </CarouselFeature>
+                </Slide>
+            </motion.div >
+        </AnimatePresence >
     ));
 
     const cloneDots = data.clones.map(cloneDot => (
@@ -44,21 +59,9 @@ export const Work = ({ data }) => {
 
     return (
         <CarouselContainer>
-            {/* Slider Image */}
             <Slider>
-                <SubContainer>
-                    {cloneData}
-                </SubContainer>
+                {cloneData}
             </Slider>
-            {/* Slider Image */}
-
-            {/* Dots */}
-            <Dots>
-                {cloneDots}
-            </Dots>
-            {/* Dots */}
-
-            {/* Arrows */}
             <Arrows>
                 <Arrow className="prev" onClick={prevSlide}>
                     &#10094;
@@ -67,7 +70,7 @@ export const Work = ({ data }) => {
                     &#10095;
                 </Arrow>
             </Arrows>
-            {/* Arrows */}
+            <Dots>{cloneDots}</Dots>
         </CarouselContainer>
     );
 };

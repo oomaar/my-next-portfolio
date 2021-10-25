@@ -65,7 +65,7 @@ export const lightTheme = {
     scrollBarHover: `hsl(${hueColor}, 8%, 65%)`,
     scrollThumbColor: `hsl(${hueColor}, 12%, 80%)`,
     textGradient: `linear-gradient(to right, #ff8243, #c89595, #2c2891, #316b83)`,
-    iconColor: ``
+    iconColor: `#A31768`
   },
 };
 
@@ -87,7 +87,7 @@ export const darkTheme = {
     scrollBarHover: `hsl(${hueColor}, 8%, 65%)`,
     scrollThumbColor: `hsl(${hueColor}, 12%, 36%)`,
     textGradient: `linear-gradient(to right, #edca85, #e58cb7, #a166e9, #a0e9ff)`,
-    iconColor: ``
+    iconColor: `#3D56B2`
   },
 };
 
@@ -178,6 +178,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   @media screen and (max-width: ${mdScreen}) {
     width: 100%;

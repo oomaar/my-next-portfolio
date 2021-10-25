@@ -56,3 +56,31 @@ export const discoverVariants = {
         scale: 1.1,
     }
 };
+
+export const backDropVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visable: {
+        opacity: 1
+    },
+    exit: {
+        opacity: 0
+    }
+};
+
+export const modalVariants = {
+    hidden: {
+        y: '-100vh',
+        opacity: 0
+    },
+    visable: {
+        y: '0',
+        opacity: 1,
+        transition: { delay: 0.5 }
+    },
+    exit: {
+        y: '-100vh',
+        opacity: 0
+    }
+};

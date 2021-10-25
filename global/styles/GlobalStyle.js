@@ -72,8 +72,8 @@ export const lightTheme = {
 export const darkTheme = {
   colors: {
     linkColor: `#edca85`,
-    buttonText: `#333`,
-    buttonColor: `#82b42f`,
+    buttonText: `#fff`,
+    buttonColor: `#318ce7`,
     shadowColor: `${shadowDark}`,
     imageShadow: `${imgShadowDark}`,
     titleColor: `hsl(${hueColor}, 8%, 95%)`,
@@ -162,6 +162,10 @@ export const Section = styled.section`
 
   @media screen and (max-width: ${xlScreen}) {
     margin: 3rem 0;
+  }
+
+  @media screen and (max-width: ${mdScreen}) {
+    padding: 0.3rem;
   }
 `;
 

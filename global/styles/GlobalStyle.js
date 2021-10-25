@@ -156,9 +156,10 @@ export const Main = styled.main`
 `;
 
 export const Section = styled.section`
-  margin-top: 10rem;
+  margin: 10rem auto 0;
   display: flex;
   justify-content: center;
+  max-width: 1500px;
 
   @media screen and (max-width: ${xlScreen}) {
     margin: 3rem 0;

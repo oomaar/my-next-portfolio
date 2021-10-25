@@ -50,3 +50,9 @@ export const projectMindVariants = {
         }
     }
 };
+
+export const discoverVariants = {
+    hover: {
+        scale: 1.1,
+    }
+};

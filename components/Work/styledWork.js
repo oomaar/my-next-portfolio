@@ -11,12 +11,22 @@ export const LinksList = styled.ul`
   display: flex;
   justify-content: space-around;
   gap: 1rem;
+  padding: 0;
+
+  @media screen and (max-width: ${mdScreen}) {
+    gap: 0.5rem;
+  }
 `;
 
 export const ListItem = styled.li`
   font-size: 1.5rem;
   color: ${({ theme }) => theme.colors.titleColor};
   cursor: pointer;
+  list-style: none;
+
+  @media screen and (max-width: ${mdScreen}) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const CarouselContainer = styled.div`

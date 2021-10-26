@@ -4,12 +4,12 @@
       {
         "id": 1,
         "title": "About",
-        "href": "#about"
+        "href": "/about"
       },
       {
         "id": 2,
         "title": "Skills",
-        "href": "#skills"
+        "href": "/skills"
       },
       {
         "id": 3,
@@ -19,7 +19,7 @@
       {
         "id": 4,
         "title": "Contact",
-        "href": "#contact"
+        "href": "/contact"
       }
     ]
   },
@@ -93,7 +93,48 @@
       ]
     }
   },
-  "about": {},
+  "about": {
+    "bio": "I am a creative Frontend Engineer and a Self-Learner.I have always been passionate about everything related to technology and programming, especially the web professions, which I made my career by always giving the best I can give as a Web Developer.I also love to clone real big projects (ex:Netflix, Amazon, etc...) from scratch just for fun, and I enjoy bringing ideas to life in the browser. Aside code I love travelling and making new friends, I love life and people.",
+    "img": "/about.JPG",
+    "imgLight": "/about-light.jpg",
+    "history": [
+      {
+        "id": 0,
+        "title": "Degree",
+        "subTitle": "Bachelor Degree / Computer Science",
+        "location": "Future University in Egypt (FUE)",
+        "date": "SEP:2012 - FEB:2018"
+      },
+      {
+        "id": 1,
+        "title": "Military Service",
+        "subTitle": "Completed Military Service",
+        "location": "Egyption Army IS Department",
+        "date": "OCT:2018 - DEC:2019"
+      },
+      {
+        "id": 2,
+        "title": "Self Learning",
+        "subTitle": "Web Development",
+        "location": "",
+        "date": "DEC:2019 - JAN:2021"
+      },
+      {
+        "id": 3,
+        "title": "Bootcamp",
+        "subTitle": "The Complete Web Development Bootcamp",
+        "location": "App Brewery, London",
+        "date": "JAN:2021 - JUN:2021"
+      },
+      {
+        "id": 4,
+        "title": "FreeLancing",
+        "subTitle": "As a Programmer",
+        "location": "",
+        "date": "JUL:2021 - PRESENT"
+      }
+    ]
+  },
   "skills": [
     {
       "id": 1,

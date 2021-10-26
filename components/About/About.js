@@ -14,6 +14,7 @@ import {
 
 export const About = ({ data }) => {
     const darkThemeState = useSelector(darkValue);
+    const historyData = data.history;
 
     return (
         <div>
@@ -27,19 +28,14 @@ export const About = ({ data }) => {
                                 <AboutImage src={`${darkThemeState === "light" ? '/about-light' : '/about'}.jpg`} />
                             </ImageContainer>
                             <BioContainer>
-                                <AboutBio>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, optio.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, at!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, tenetur.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, maxime.
-                                </AboutBio>
+                                <AboutBio>{data.bio}</AboutBio>
                                 <AboutButton>Download CV</AboutButton>
                             </BioContainer>
                         </AboutSubContainer>
                     </AboutContainer>
                 </Container>
             </Section>
-            <BriefHistory />
+            <BriefHistory data={historyData} />
         </div>
     );
 };

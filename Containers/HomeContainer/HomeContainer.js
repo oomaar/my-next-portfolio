@@ -1,5 +1,5 @@
 import { Headtag, Main } from "../../global";
-import { About, Contact, Hero, Navigation, Services, Skills } from "../../components";
+import { Hero, Navigation } from "../../components";
 import portfolioData from "../../data/portfolioData.json";
 import {
     Container,
@@ -12,11 +12,7 @@ export const HomeContainer = () => {
 
             <Main>
                 <Hero data={portfolioData.hero} />
-                <Services data={portfolioData.services} />
                 <Navigation />
-                {/* <About data={portfolioData.about} /> */}
-                {/* <Skills data={portfolioData.skills} /> */}
-                {/* <Contact data={portfolioData.contact} /> */}
             </Main>
         </Container>
     );

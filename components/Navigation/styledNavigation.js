@@ -28,6 +28,7 @@ export const LinkContainer = styled.div`
   padding: 1rem;
   cursor: pointer;
   max-width: 280px;
+  width: 100%;
   margin: 1rem auto;
 `;
 
@@ -38,5 +39,5 @@ export const Link = styled.a`
 
 export const IconContainer = styled.div`
   font-size: 3rem;
-  color: ${({ theme }) => theme.colors.titleColor};
+  color: ${({ theme }) => theme.colors.iconColor};
 `;

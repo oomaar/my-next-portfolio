@@ -10,3 +10,4 @@ export { ProjectMind } from "./ProjectMind/ProjectMind";
 export { Navigation } from "./Navigation/Navigation";
 export { Services } from "./Services/Services";
 export { ServiceModal } from "./ServiceModal/ServiceModal";
+export { BriefHistory } from "./BriefHistory/BriefHistory";

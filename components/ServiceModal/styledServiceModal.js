@@ -48,6 +48,3 @@ export const ModalText = styled.p`
     width: 90%;
   }
 `;
-
-export const ModalSubContainer = styled.div`
-`;

@@ -27,6 +27,72 @@
     "firstName": "Omar",
     "subTitle": "I’m also a front-end developer with a keen eye for creating beautiful UIs, producing quality work."
   },
+  "services": {
+    "modals": {
+      "front": [
+        {
+          "id": 0,
+          "service": "Responsive Web Designing."
+        },
+        {
+          "id": 1,
+          "service": "Create Next-App."
+        },
+        {
+          "id": 2,
+          "service": "Convert Xd, PSD & JPG files into a responsive and pixel perfect website."
+        },
+        {
+          "id": 3,
+          "service": "Convert HTML, CSS & Javascript into React App."
+        },
+        {
+          "id": 4,
+          "service": "Build complex Frontends with Animations."
+        }
+      ],
+      "back": [
+        {
+          "id": 0,
+          "service": "Build A Secure and Authenticated Server."
+        },
+        {
+          "id": 1,
+          "service": "Maintain, Test & Secure MongoDB Database."
+        },
+        {
+          "id": 2,
+          "service": "Handle Private Secure Routes."
+        },
+        {
+          "id": 3,
+          "service": "Build Firebase App."
+        },
+        {
+          "id": 4,
+          "service": "Deploy a Web App on Vercel, Firebase or Netlify."
+        }
+      ],
+      "design": [
+        {
+          "id": 0,
+          "service": "Photo Editing."
+        },
+        {
+          "id": 1,
+          "service": "Photoshop."
+        },
+        {
+          "id": 3,
+          "service": "Convert HTML to PSD, Xd."
+        },
+        {
+          "id": 4,
+          "service": "Developing graphics and layouts for product illustrations, company logos and websites."
+        }
+      ]
+    }
+  },
   "about": {},
   "skills": [
     {
@@ -177,59 +243,5 @@
       }
     ]
   },
-  "contact": {},
-  "services": {
-    "modals": {
-      "front": [
-        {
-          "id": 0,
-          "service": "Responsive Web Designing."
-        },
-        {
-          "id": 1,
-          "service": "Convert Xd, PSD, & JPG files into a responsive and pixel perfect website."
-        },
-        {
-          "id": 2,
-          "service": "Convert HTML, CSS & Javascript to React App."
-        },
-        {
-          "id": 3,
-          "service": "Build complex frontends."
-        }
-      ],
-      "back": [
-        {
-          "id": 0,
-          "service": "Build a NodeJS, Express Server."
-        },
-        {
-          "id": 1,
-          "service": "Develop and Maintain MongoDB Database."
-        },
-        {
-          "id": 2,
-          "service": "Build a Firebase App."
-        },
-        {
-          "id": 3,
-          "service": "Handle Route request and response."
-        }
-      ],
-      "design": [
-        {
-          "id": 0,
-          "service": "Photo-Edit on Photoshop."
-        },
-        {
-          "id": 1,
-          "service": "Logo Design on Illustrator."
-        },
-        {
-          "id": 2,
-          "service": "Branding."
-        }
-      ]
-    }
-  }
+  "contact": {}
 }

@@ -1,12 +1,18 @@
 import styled from 'styled-components';
+import { lgScreen, xlScreen } from '../../global';
 
 export const ServicesContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  /* gap: 1rem; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  padding: 0 auto;
   width: 100%;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: ${xlScreen}) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const SubContainer = styled.div`
@@ -18,18 +24,7 @@ export const SubContainer = styled.div`
   padding: 1rem;
   max-width: 300px;
   width: 100%;
-
-  :nth-child(1) {
-    align-self: flex-start;
-  }
-
-  :nth-child(2) {
-    align-self: center;
-  }
-
-  :nth-child(3) {
-    align-self: flex-end;
-  }
+  margin: 0 auto;
 `;
 
 export const TitleContainer = styled.div`

@@ -5,6 +5,7 @@ import { CgDesignmodo } from "react-icons/cg";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { useState } from "react";
 import { ServiceModal } from "..";
+import { AnimatePresence } from "framer-motion";
 import {
     ServicesContainer,
     SubContainer,
@@ -33,13 +34,15 @@ export const Services = ({ data }) => {
         <Section>
             <Container>
                 <Title>Services</Title>
-                {showModal && (
-                    <ServiceModal
-                        handleCloseModal={handleCloseModal}
-                        modal={modal}
-                        data={modalData}
-                    />
-                )}
+                <AnimatePresence exitBeforeEnter onExitComplete={() => handleCloseModal()}>
+                    {showModal && (
+                        <ServiceModal
+                            handleCloseModal={handleCloseModal}
+                            modal={modal}
+                            data={modalData}
+                        />
+                    )}
+                </AnimatePresence>
                 <ServicesContainer>
                     <SubContainer>
                         <TitleContainer>

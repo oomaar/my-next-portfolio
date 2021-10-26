@@ -1,13 +1,12 @@
 import { AiFillCheckCircle } from "react-icons/ai";
 import { ImCross } from "react-icons/im";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { backDropVariants, modalVariants } from "../../animations";
 import {
     Modal,
     ModalContainer,
     CloseIcon,
     ModalText,
-    ModalSubContainer,
 } from "./styledServiceModal";
 
 export const ServiceModal = ({ handleCloseModal, modal, data }) => {
@@ -46,27 +45,25 @@ export const ServiceModal = ({ handleCloseModal, modal, data }) => {
                 animate="visable"
                 exit="exit"
             >
-                <AnimatePresence exitBeforeEnter onExitComplete={() => handleCloseModal()}>
-                    <Modal>
-                        <motion.div variants={modalVariants}>
-                            <ModalContainer>
-                                <CloseIcon>
-                                    <ImCross onClick={() => handleCloseModal()} />
-                                </CloseIcon>
-                                <ModalSubContainer>
-                                    {modal === "front" ? (
-                                        frontEndData
-                                    ) : modal === "back" ? (
-                                        backEndData
-                                    ) : modal === "design" ? (
-                                        designData
-                                    ) : <></>}
-                                </ModalSubContainer>
-                            </ModalContainer>
-                        </motion.div>
-                    </Modal>
-                </AnimatePresence>
+                <Modal>
+                    <motion.div variants={modalVariants}>
+                        <ModalContainer>
+                            <CloseIcon>
+                                <ImCross onClick={() => handleCloseModal()} />
+                            </CloseIcon>
+                            <div>
+                                {modal === "front" ? (
+                                    frontEndData
+                                ) : modal === "back" ? (
+                                    backEndData
+                                ) : modal === "design" ? (
+                                    designData
+                                ) : <></>}
+                            </div>
+                        </ModalContainer>
+                    </motion.div>
+                </Modal>
             </motion.div>
         </div>
-    )
-}
+    );
+};

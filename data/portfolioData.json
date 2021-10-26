@@ -135,70 +135,6 @@
       }
     ]
   },
-  "skills": [
-    {
-      "id": 1,
-      "title": "HTML-5",
-      "image": "/skills/html.png"
-    },
-    {
-      "id": 2,
-      "title": "CSS-3",
-      "image": "/skills/css.png"
-    },
-    {
-      "id": 3,
-      "title": "Javascript",
-      "image": "/skills/js.png"
-    },
-    {
-      "id": 4,
-      "title": "Sass",
-      "image": "/skills/sass.png"
-    },
-    {
-      "id": 5,
-      "title": "React-JS",
-      "image": "/skills/react.png"
-    },
-    {
-      "id": 6,
-      "title": "Redux",
-      "image": "/skills/redux.png"
-    },
-    {
-      "id": 7,
-      "title": "Next-JS",
-      "image": "/skills/next.png",
-      "imageWhite": "/skills/next-white.png"
-    },
-    {
-      "id": 8,
-      "title": "MongoDB",
-      "image": "/skills/mongo.png"
-    },
-    {
-      "id": 9,
-      "title": "Firebase",
-      "image": "/skills/onfire.png"
-    },
-    {
-      "id": 10,
-      "title": "Node-JS",
-      "image": "/skills/node.png",
-      "imageWhite": "/skills/node-white.png"
-    },
-    {
-      "id": 11,
-      "title": "Git",
-      "image": "/skills/git.png"
-    },
-    {
-      "id": 12,
-      "title": "MERN-Stack",
-      "image": "/skills/mern.png"
-    }
-  ],
   "portfolio": {
     "clones": [
       {
@@ -284,5 +220,69 @@
       }
     ]
   },
+  "skills": [
+    {
+      "id": 1,
+      "title": "HTML-5",
+      "image": "/skills/html.png"
+    },
+    {
+      "id": 2,
+      "title": "CSS-3",
+      "image": "/skills/css.png"
+    },
+    {
+      "id": 3,
+      "title": "Javascript",
+      "image": "/skills/js.png"
+    },
+    {
+      "id": 4,
+      "title": "Sass",
+      "image": "/skills/sass.png"
+    },
+    {
+      "id": 5,
+      "title": "React-JS",
+      "image": "/skills/react.png"
+    },
+    {
+      "id": 6,
+      "title": "Redux",
+      "image": "/skills/redux.png"
+    },
+    {
+      "id": 7,
+      "title": "Next-JS",
+      "image": "/skills/next.png",
+      "imageWhite": "/skills/next-white.png"
+    },
+    {
+      "id": 8,
+      "title": "MongoDB",
+      "image": "/skills/mongo.png"
+    },
+    {
+      "id": 9,
+      "title": "Firebase",
+      "image": "/skills/onfire.png"
+    },
+    {
+      "id": 10,
+      "title": "Node-JS",
+      "image": "/skills/node.png",
+      "imageWhite": "/skills/node-white.png"
+    },
+    {
+      "id": 11,
+      "title": "Git",
+      "image": "/skills/git.png"
+    },
+    {
+      "id": 12,
+      "title": "MERN-Stack",
+      "image": "/skills/mern.png"
+    }
+  ],
   "contact": {}
 }

@@ -1,13 +1,33 @@
 import styled from 'styled-components';
 import { lgScreen, mdScreen, xlScreen } from '../../global';
 
+export const Navbar = styled.nav`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+export const LinksList = styled.ul`
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+`;
+
+export const ListItem = styled.li`
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.colors.titleColor};
+  cursor: pointer;
+`;
+
 export const CarouselContainer = styled.div`
   position: relative;
+  width: 100%;
+  margin: 2rem 0;
 `;
 
 export const Slider = styled.div`
   width: 90%;
-  margin: 0 auto;
+  margin: 2rem auto;
 
   @media screen and (max-width: ${xlScreen}) {
     width: 100%;
@@ -134,7 +154,7 @@ export const Arrows = styled.div`
 
 export const Dots = styled.div`
   position: absolute;
-  top: calc(100% + 2.5rem);
+  top: 100%;
   left: 0;
   right: 0;
   display: flex;
